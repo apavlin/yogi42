@@ -7,6 +7,13 @@ html, body {
   padding:0;*/
 }
 
+.browsehappy {
+  text-align: center;
+  /*color: red;*/
+  font-size:30px ;
+
+}
+
 .header-container {
   width: 100%;
   margin: 0 auto;
@@ -18,7 +25,7 @@ html, body {
   width: 100%;
   background: #e3bbfc;
   opacity: 0.9;
-  z-index: 1;
+  z-index: 3;
   transition: ease-out 0.5s;
   border-radius: 0 0 45px 45px;
  }
@@ -88,7 +95,7 @@ header:hover  {
 
 .main {
 margin-top: 80px;
-padding: 80px 0 50px 0;
+padding: 60px 0 50px 0;
 width: 100%;
 margin: 0 auto;
 text-align: center;
@@ -107,6 +114,7 @@ width: 25%;
 .left {
 float: left;
 width: 33.33%;
+
 }
 
 .center {
@@ -124,11 +132,11 @@ width: 33.33%;
 .article-header {
   margin:0;
   background: #eacefc;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: normal;
   color: white;
   padding:3px 40px;
-  border-bottom: 3px solid white;
+  border-bottom: 4px solid white;
 }
 
 .article-info {
@@ -139,16 +147,11 @@ width: 33.33%;
   hyphens: auto;
 }
 
-.asana {
-  max-width: 60%;
-  opacity: 0.1;
-  padding: 150px 0;
-}
 
 .footer {
   position:fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   color: white;
 	background: #e3bbfc;
 	margin:auto;
@@ -159,6 +162,145 @@ width: 33.33%;
   bottom: 0%;
   vertical-align: middle;
 }
+
+.contacts-list{
+margin: 0;
+}
+
+.contacts-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+}
+
+.links-text{
+  display: inline-block;
+  opacity: 0;
+  color:white;
+  transition:1s;
+
+}
+
+.tel {
+  height: 32px;
+  width: 32px;
+  background: url('../images/tel.png') no-repeat center right;
+}
+.vk {
+  height: 32px;
+  width: 32px;
+  background: url('../images/vk.png') no-repeat center center;
+}
+.email {
+  height: 32px;
+  width: 32px;
+  background: url('../images/email.png') no-repeat center left;
+}
+
+
+
+.email-text:hover {
+  opacity: 1;
+  transform: translateX(50px)
+  }
+
+.tel-text:hover {
+  opacity: 1;
+  transform: translateX(-50px)
+  }
+
+
+ /*ASANAS*/
+
+.oneA {
+  width: 400px;
+  height: 400px;
+  margin: 200px auto;
+  position: relative;
+  overflow: hidden;
+  box-sizing:border-box;
+}
+
+.asana-wrapper {
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.asana-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 0.25;
+  transform:scale(0.7);
+  -webkit-transition: opacity 0.2s ease-in-out .2s;
+  transition: opacity 0.2s ease-in-out .2s;
+  z-index: 2;
+}
+
+.asana-header {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  line-height: 25px;
+  opacity: 0;
+  padding: 20px 20px 0 20px;
+  -webkit-transition: opacity 0.2s ease-in-out .2s;
+  transition: opacity 0.2s ease-in-out .2s;
+}
+
+.asana-text {
+  font-size: 16px;
+  color: black;
+  opacity: 0;
+  text-align: justify;
+  padding: 0 20px 20px 20px;
+  -webkit-transition: opacity 0.2s ease-in-out .2s;
+  transition: opacity 0.2s ease-in-out .2s;
+}
+
+
+
+/*Обводка*/
+ .lineTop, .lineRight, .lineBottom, .lineLeft {
+  position: absolute;
+  background: #e3bbfc; /*цвет границы*/
+  -webkit-transition:
+    top 0.4s ease-in-out 0s,
+    right 0.4s ease-in-out 0s,
+    bottom 0.4s ease-in-out 0s,
+    left 0.4s ease-in-out 0s;
+  transition:
+    top 0.4s ease-in-out 0s,
+    right 0.4s ease-in-out 0s,
+    bottom 0.4s ease-in-out 0s,
+    left 0.4s ease-in-out 0s;
+}
+
+.lineTop, .lineBottom { width: 100%;height: 2px;}
+.lineLeft, .lineRight { width: 2px;height: 100%;}
+
+/*граница сверху*/
+.lineTop {left:-100%;top:0;}
+.oneA:hover .lineTop {left:0;}
+
+/*граница справа*/
+.lineRight {top:-100%;right:0;}
+.oneA:hover .lineRight {top:0;}
+
+/*граница снизу*/
+.lineBottom {right:-100%;bottom:0;}
+.oneA:hover .lineBottom {right:0;}
+
+/*граница слева*/
+.lineLeft {bottom:-100%;left:0;}
+.oneA:hover .lineLeft {bottom:0;}
+
+
+
+
 
 
 .onlyfortablet {
