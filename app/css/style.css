@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: 'open_sanslight', sans-serif;
+/*  font-family: 'open_sanslight', sans-serif;*/
   font-size: 16px;
   text-rendering: optimizeLegibility;
   box-sizing: border-box;
@@ -28,12 +28,13 @@ body {
   opacity: 0.9;
   position: fixed;
   width: 100%;
-  background: #c3ab6c;
+  background: #e69a1f;
   text-align: center;
   z-index: 2;
 }
 
 .header {
+  font-family:'comfortaalight';
   border-radius: 0 0 45px 45px;
 }
 
@@ -41,7 +42,7 @@ body {
   /*  font-size: 22px;*/
   border-radius: 50px 50px 0 0;
   bottom: 0%;
-}
+  }
 
 .menu {
   margin: 0;
@@ -180,7 +181,7 @@ body {
 }
 
 .main {
-  padding: 35px 0 50px 0;
+  padding: 35px 0 35px 0;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -216,7 +217,8 @@ body {
 
 .article-header {
   margin: 0;
-  background: #B0C86D;
+  background: #9fc437;
+  font-family:'comfortaaregular';
   font-size: 22px;
   font-weight: normal;
   color: white;
@@ -224,12 +226,13 @@ body {
   margin-right: -6px;*/
   padding: 3px 40px;
   /*border-top: 6px solid white;*/
-  border-bottom: 6px solid white;
+  border-bottom: 4px solid white;
 }
 
 .article-info {
+  font-family: 'robotolight';
   padding: 5px 40px 20px 40px;
-  background: #f9f8f2;
+  background: rgb(250, 245, 214);
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   -moz-hyphens: auto;
@@ -244,8 +247,7 @@ body {
 .contacts-item {
   display: inline-block;
   vertical-align: middle;
-  position: relative;
-  padding: 5px 70px;
+  padding: 3px 70px;
   font-size: 0;
 }
 
@@ -284,8 +286,8 @@ body {
 }
 
 .ok {
-  height: 22px;
-  width: 22px;
+  height: 21px;
+  width: 21px;
   background: url('../images/ok.svg') no-repeat center center;
   background-size: contain, 0 0;
 
@@ -303,15 +305,6 @@ body {
   width: 24px;
   background: url('../images/email.svg') no-repeat center center;
   background-size: contain, 0 0;
-}
-
-
-.tel-text:before:hover {
-  content: "+7-906-933-39-64";
-}
-
-.email-text:after:hover {
-  content: "yalovitskaya81@mail.ru";
 }
 
 
@@ -354,6 +347,7 @@ body {
 }
 
 .asana-header {
+  font-family:'comfortaalight';
   text-align: center;
   color: black;
   font-size: 20px;
@@ -365,10 +359,11 @@ body {
 }
 
 .asana-text {
+  font-family: 'robotolight';
   font-size: 16px;
   color: black;
   opacity: 0;
-  text-align: justify;
+/*  text-align: justify;*/
   padding: 0 20px 20px 20px;
   -webkit-transition: opacity 0.2s ease-in-out .2s;
   transition: opacity 0.2s ease-in-out .2s;
