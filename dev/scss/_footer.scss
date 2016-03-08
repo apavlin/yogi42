@@ -1,0 +1,57 @@
+.footer {
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    background:#999;
+    width: 100%;
+}
+
+.contacts {
+    margin: 0;
+    padding: 0;
+    &__item {
+        display: inline-flex;
+        margin: 7px 70px;
+        font-size: 0;
+    }
+    &__link {
+        align-items: baseline;
+        display: inline-flex;
+        cursor: pointer;
+        border-radius: 50%;
+        height: 28px;
+        width: 28px;
+        &:hover {
+            animation-name: swing;
+            animation-duration: 0.5s;
+        }
+        &_tel {
+            background:  url('../img/tel.svg') no-repeat center center;
+            background-size: contain, 0 0;
+        }
+        &_vk {
+            background:  url('../img/vk.svg') no-repeat center center;
+            background-size: contain, 0 0;
+        }
+        &_ok {
+            height: 26px;
+            width: 26px;
+            background:  url('../img/ok.svg') no-repeat center center;
+            background-size: contain, 0 0;
+        }
+        &_fb {
+            background:  url('../img/fb.svg') no-repeat center center;
+            background-size: contain, 0 0;
+        }
+        &_email {
+            background:  url('../img/email.svg') no-repeat center center;
+            background-size: contain, 0 0;
+        }
+    }
+    &__text {
+        display: none;
+        &_tel, &_email {
+            font-size: 14px;
+        }
+    }
+}

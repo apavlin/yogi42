@@ -1,0 +1,25 @@
+include _common/_mixins
+
+doctype html
+html(lang='ru-RU')
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title
+			| Тестовая версия нового сайта Йога в Кемерово - сайт мастера хатха-йоги Юлии Шалимовой
+		link(rel="stylesheet" href="css/main.min.css")
+		//- if lt IE 9
+		//- script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
+		//- p.browsehappy
+		//- 	| Некоторые элементы могут отображаться некорректно т.к. вы используете
+		//- 	strong устаревший
+		//- 	|  браузер. Пожалуйста
+		//- 	a(href='http://browsehappy.com/?locale=ru_RU') обновите
+		//- 	|  его.
+	body
+		include _common/_header.jade
+		block content
+		include _common/_footer.jade
+
+		script(src="js/main.min.js")

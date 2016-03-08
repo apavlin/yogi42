@@ -1,39 +1,33 @@
 @media only screen and (max-width:1630px) {
-  .oneA {
-    height: 300px;
-    width: 300px;
-  }
-  .asana-header {
+
+  .asana__header {
     font-size: 16px;
   }
-  .asana-text {
+  .asana__text {
     font-size: 13px;
   }
 }
 
 @media only screen and (max-width:1252px) {
-  .menu-links {
+  .menu__link {
     font-size: 18px;
   }
-  .oneA {
-    width: 200px;
-    height: 200px;
-  }
-  .asana-img {
+
+  .asana__img {
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
 }
-  .asana-header {
+  .asana__header {
     font-size: 11px;
     padding: 5px;
     margin: 0;
   }
-  .asana-text {
+  .asana__text {
     font-size: 9px;
     padding: 10px;
     margin: 0;
   }
-  .contacts-item {
+  .contacts__item {
     padding: 5px 40px;
   }
 }
@@ -46,29 +40,29 @@
     width: auto;
     margin-right: 5px;
   }
-  .menu-items {
+  .menu__item {
     padding: 5px 10px;
   }
-  .contacts-item {
+  .contacts__item {
     padding: 5px 40px;
   }
-  .menu-links {
+  .menu__link {
     font-size: 18px;
   }
 }
 
 @media only screen and (max-width:670px) {
 
-  .menu-items {
+  .menu__item {
     padding: 1px 2px;
   }
-  .menu-links {
+  .menu__link {
     font-size: 18px;
   }
-  .article-header {
+  .article__header {
     font-size: 22px;
   }
-  .article-info {
+  .article__info {
     font-size: 16px;
     padding: 15px;
     margin: 0;
@@ -85,14 +79,14 @@
   .center {
     width: 100%;
   }
-  .article-info {
+  .article__info {
     padding-top: 20px;
   }
-  .links-text {
+  .links__text {
     display: none;
   }
-  .contacts-item {
+  .contacts__item {
     padding: 1px 15px;
   }
-  
+
 }
