@@ -1,7 +1,8 @@
-mixin nav(className, items, activeIndex)
-	nav(class=className)
-		.container
-			ul(class="#{className}__list")
-				each item, index in items
-					li(class="#{className}__item" + ((activeIndex == index) ? "_active" : ''))
-						a(href="#" class="#{className}__link")= item
+mixin asana(indexes, asanas)
+    each index in indexes
+        .asana
+            img(src="#{asanas[index].link}", alt="#{asanas[index].name}").asana__img
+            .asana__wrapper
+                .asana__header= asanas[index].name
+                .asana__subHeader= asanas[index].rusName
+                p.asana__text= asanas[index].descr
