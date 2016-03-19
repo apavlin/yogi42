@@ -1,6 +1,8 @@
 $footerColor: #bbd66b;
 
 .footer {
+    animation-delay: 0.5s;
+    animation-duration: 0.8s;
     display: flex;
     flex-direction: column;
 
@@ -18,23 +20,46 @@ $footerColor: #bbd66b;
     }
 }
 
+@keyframes stretching {
+    0% { background:none;
+        // transform: scale(1)
+        // height: 30px;
+    }
+    50% {
+        // transform: scale(2)
+        // height: 50px;
+        background: brown;
+
+    }
+    100% {
+        background:none;
+        // transform: scale(1)
+        // height: 30px;
+    }
+}
+
+
 .contacts {
-    width: 70%;
+    width: 85%;
     display: flex;
     justify-content: space-around;
     margin: 0;
     padding: 0;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
     &__item {
-        display: inline-flex;
+        // display: inline-flex;
         margin: 0 0 5px;
         font-size: 0;
+        border-radius: 50%;
+
     }
     &__link {
         cursor: pointer;
         display: inline-flex;
 
         align-items: baseline;
-        border-radius: 50%;
+
         height: 28px;
         width: 28px;
         &:hover {

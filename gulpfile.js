@@ -74,7 +74,7 @@ gulp.task('concat-js', function() {
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(sourcemaps.init())
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(concat('main.min.js'))
     .pipe(rigger())
   	.pipe(sourcemaps.write())
