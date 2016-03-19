@@ -1,0 +1,98 @@
+$footerColor: #bbd66b;
+
+.footer {
+    animation-delay: 0.5s;
+    animation-duration: 0.8s;
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        display: flex;
+        justify-content:  center;
+        width: 100%;
+        background:$footerColor;
+    }
+    &__curve {
+        width: 100%;
+        height: 13px;
+        fill:$footerColor;
+        margin-bottom: -0.5px;
+    }
+}
+
+@keyframes stretching {
+    0% { background:none;
+        // transform: scale(1)
+        // height: 30px;
+    }
+    50% {
+        // transform: scale(2)
+        // height: 50px;
+        background: brown;
+
+    }
+    100% {
+        background:none;
+        // transform: scale(1)
+        // height: 30px;
+    }
+}
+
+
+.contacts {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    &__item {
+        // display: inline-flex;
+        margin: 0 0 5px;
+        font-size: 0;
+        border-radius: 50%;
+
+    }
+    &__link {
+        cursor: pointer;
+        display: inline-flex;
+
+        align-items: baseline;
+
+        height: 28px;
+        width: 28px;
+        &:hover {
+            animation-name: swing;
+            animation-duration: 0.5s;
+        }
+        &_tel {
+            background:  url('../img/tel.svg') no-repeat center center;
+            background-size: contain, 0 0;
+        }
+        &_vk {
+            background:  url('../img/vk.svg') no-repeat center center;
+            background-size: contain, 0 0;
+        }
+        &_ok {
+            height: 26px;
+            width: 26px;
+            background:  url('../img/ok.svg') no-repeat center center;
+            background-size: contain, 0 0;
+        }
+        &_fb {
+            background:  url('../img/fb.svg') no-repeat center center;
+            background-size: contain, 0 0;
+        }
+        &_email {
+            background:  url('../img/email.svg') no-repeat center center;
+            background-size: contain, 0 0;
+        }
+    }
+    &__text {
+        display: none;
+        &_tel, &_email {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,2 +1,4 @@
 node_modules
-app/bower
+bower_components
+prod
+.brackets.json

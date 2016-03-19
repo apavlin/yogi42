@@ -1,0 +1,163 @@
+@media only screen and (max-width:1690px) {
+
+  .asana__header {
+    font-size: 16px;
+  }
+  .asana__text {
+    font-size: 13px;
+  }
+  .welcome {
+    min-height: 500px;
+  }
+}
+
+@media only screen and (max-width:1252px) {
+  .menu__link {
+    font-size: 18px;
+  }
+  .article__container, .header__container, .welcome__container {
+      width: 85%;
+  }
+  .asana__img {
+    transform: scale(0.8);
+  }
+  .asana__header {
+    font-size: 11px;
+    padding: 5px;
+    margin: 0;
+  }
+  .asana__text {
+    font-size: 9px;
+    padding: 10px;
+    margin: 0;
+  }
+  .contacts__item {
+    margin: 5px 40px;
+  }
+   .welcome {
+    min-height: 400px;
+  }
+}
+
+@media only screen and (max-width:850px) {
+  .header-container {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    display: none;
+  }
+  .title {
+    display: none;
+    &__link {
+      font-size: 20px;
+    }
+  }
+
+  .article{
+    &__header {
+      font-size: 22px;
+    }
+    &__container {
+      width: 90%;
+    }
+  }
+  .columnWrapper {
+    width: auto;
+    margin-right: 5px;
+  }
+  .menu__item {
+    padding: 5px 10px;
+  }
+  .contacts__item {
+    margin: 5px 30px;
+  }
+  .menu__link {
+    font-size: 18px;
+  }
+  .asana:last-child {
+    display: none;
+  }
+  .welcome {
+    min-height: 300px;
+      &__container {
+        width: 100%;
+      }
+      &__quoteBox {
+        width: 50%;
+        font-size: 12px;
+      }
+  }
+  .place {
+    flex-direction: column;
+    justify-content: center;
+      &__box {
+        width: 100%;
+      }
+  }
+}
+
+@media only screen and (max-width:670px) {
+
+  .title__link {
+    font-size: 20px;
+  }
+  .menu__item {
+    padding: 1px 2px;
+    &:after {
+      display: none;
+    }
+  }
+  .menu__link {
+    font-size: 16px;
+  }
+  .article{
+    &__header {
+      font-size: 22px;
+    }
+    &__container {
+      width: 95%;
+    }
+    &__info {
+      font-size: 16px;
+      margin: 0;
+    }
+    &__curveUp, &__curveDown {
+      height: 20px;
+    }
+    &__video {
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer {
+    padding: 1px 0;
+  }
+  .links__text {
+    display: none;
+  }
+  .contacts__item {
+    margin: 0 15px 3px;
+  }
+  .asana:first-child {
+    display: none;
+  }
+  .welcome {
+    min-height: 200px;
+    &__quoteBox {
+      margin: 10px;
+        font-size: 10px;
+    }
+  }
+  .video {
+    margin: 10px 4px;
+    &__text {
+      padding: 20px;
+    }
+  }
+  #map1, #map2 {
+      height: 350px;
+    }
+
+}
