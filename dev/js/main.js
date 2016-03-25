@@ -2,8 +2,6 @@
 //= ../../node_modules/photoswipe/dist/photoswipe.min.js
 //= ../../node_modules/photoswipe/dist/photoswipe-ui-default.min.js
 
-
-
 (function() {
 
 // Появление карты при нажатии на кнопку.
