@@ -6,38 +6,22 @@ $footerColor: #bbd66b;
     display: flex;
     flex-direction: column;
 
+
     &__container {
         display: flex;
+        transition: all 1s;
         justify-content:  center;
         width: 100%;
         background:$footerColor;
     }
     &__curve {
         width: 100%;
+        transition: all 1s;
         height: 13px;
         fill:$footerColor;
         margin-bottom: -0.5px;
     }
 }
-
-@keyframes stretching {
-    0% { background:none;
-        // transform: scale(1)
-        // height: 30px;
-    }
-    50% {
-        // transform: scale(2)
-        // height: 50px;
-        background: brown;
-
-    }
-    100% {
-        background:none;
-        // transform: scale(1)
-        // height: 30px;
-    }
-}
-
 
 .contacts {
     width: 85%;
@@ -48,8 +32,7 @@ $footerColor: #bbd66b;
     animation-delay: 0.5s;
     animation-duration: 1s;
     &__item {
-        // display: inline-flex;
-        margin: 0 0 5px;
+        margin: 10px 0 10px;
         font-size: 0;
         border-radius: 50%;
 
@@ -57,11 +40,9 @@ $footerColor: #bbd66b;
     &__link {
         cursor: pointer;
         display: inline-flex;
-
         align-items: baseline;
-
-        height: 28px;
-        width: 28px;
+        height: 34px;
+        width: 34px;
         &:hover {
             animation-name: swing;
             animation-duration: 0.5s;
@@ -75,8 +56,8 @@ $footerColor: #bbd66b;
             background-size: contain, 0 0;
         }
         &_ok {
-            height: 26px;
-            width: 26px;
+            height: 30px;
+            width: 30px;
             background:  url('../img/ok.svg') no-repeat center center;
             background-size: contain, 0 0;
         }
@@ -87,12 +68,13 @@ $footerColor: #bbd66b;
         &_email {
             background:  url('../img/email.svg') no-repeat center center;
             background-size: contain, 0 0;
+            fill:black;
         }
     }
     &__text {
         display: none;
         &_tel, &_email {
-            font-size: 14px;
+            font-size: 0.8rem;
         }
     }
 }

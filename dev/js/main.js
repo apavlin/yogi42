@@ -1,7 +1,7 @@
 //= ../../bower_components/jquery/dist/jquery.js
-
 //= ../../node_modules/photoswipe/dist/photoswipe.min.js
 //= ../../node_modules/photoswipe/dist/photoswipe-ui-default.min.js
+
 
 
 (function() {
@@ -62,25 +62,42 @@
     $('.contacts').css({
         'animation-name': 'swing',
         'animation-delay': '1s'});
+    setTimeout(function() {$('.footer__container').css('background', 'orange');
+                           $('.footer__curve').css('fill', 'orange')}, 2000);
     });
 
 //Переходы по ссылкам
 
     $("a").click(function () {
-          var elementClick = $(this).attr("href");
-          var destination = $(elementClick).offset().top;
-          $('html,body').scrollTop(destination);
-          return false;
+      var elementClick = $(this).attr("href");
+      var destination = $(elementClick).offset().top;
+      $('html,body').animate( { scrollTop: destination }, 1000 );
+      return false;
     });
+
+    // $("a").click(function () {
+    //       var elementClick = $(this).attr("href");
+    //       var destination = $(elementClick).offset().top;
+    //       $('html,body').scrollTop(destination);
+    //       return false;
+    // });
+
+
 // Появление блоков с текстом и заголовком при наведении на общий блок с асаной (если только средствами CSS на тач устройствах не появлялось при нажатии)
     $('.asana').hover(function(){
         $('.asana__img',this).css({'opacity':'0.05'});
-        $('.asana__header, .asana__text',this).css({'opacity':'1'});
+        $('.asana__wrapper',this).css({'opacity':'1'});
       }, (function(){
         $('.asana__img',this).css({'opacity':'0.20'});
-        $('.asana__header, .asana__text',this).css({'opacity':'0'});
+        $('.asana__wrapper',this).css({'opacity':'0'});
       }));
 
+// Уведомление об устаревшем браузере IE10
+    if (Function('/*@cc_on return document.documentMode===10@*/')()) {
+    alert('Некоторые элементы могут отображаться некорректно т.к. вы используете устаревший браузер. Пожалуйста обновите его: www.browsehappy.com');
+    }
+
+// PhotoSwipe
     var initPhotoSwipeFromDOM = function(gallerySelector) {
 
         // parse slide data (url, title, size ...) from DOM elements
@@ -225,7 +242,10 @@
 
                 // define gallery index (for URL)
                 galleryUID: galleryElement.getAttribute('data-pswp-uid'),
-
+            fullscreenEl: false,
+            shareEl: false,
+            loop: false,
+            tapToClose: true,
                 getThumbBoundsFn: function(index) {
                     // See Options -> getThumbBoundsFn section of documentation for more info
                     var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
@@ -276,17 +296,16 @@
         for(var i = 0, l = galleryElements.length; i < l; i++) {
             galleryElements[i].setAttribute('data-pswp-uid', i+1);
             galleryElements[i].onclick = onThumbnailsClick;
-        }
+        };
 
         // Parse URL and open gallery if it contains #&pid=3&gid=1
         var hashData = photoswipeParseHash();
         if(hashData.pid && hashData.gid) {
             openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
-        }
+        };
     };
 
     // execute above function
     initPhotoSwipeFromDOM('.gallery');
-
 
 })();

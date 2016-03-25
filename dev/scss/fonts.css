@@ -1,3 +1,32 @@
+@font-face {
+    font-family: 'tuffyregular';
+    src: url('../fonts/tuffy-webfont.eot');
+    src: url('../fonts/tuffy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tuffy-webfont.woff2') format('woff2'),
+         url('../fonts/tuffy-webfont.woff') format('woff'),
+         url('../fonts/tuffy-webfont.ttf') format('truetype'),
+         url('../fonts/tuffy-webfont.svg#tuffyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'lifehackregular';
+    src: url('../fonts/deartype_-_lifehack-webfont.eot');
+    src: url('../fonts/deartype_-_lifehack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/deartype_-_lifehack-webfont.woff2') format('woff2'),
+         url('../fonts/deartype_-_lifehack-webfont.woff') format('woff'),
+         url('../fonts/deartype_-_lifehack-webfont.ttf') format('truetype'),
+         url('../fonts/deartype_-_lifehack-webfont.svg#lifehackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 @font-face {
     font-family: 'open_sanslight';
@@ -12,9 +41,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'open_sanslight_italic';
     src: url('../fonts/opensans-lightitalic-webfont.eot');
@@ -27,8 +53,6 @@
     font-style: normal;
 
 }
-
-
 
 @font-face {
     font-family: 'comfortaalight';
@@ -43,9 +67,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'comfortaaregular';
     src: url('../fonts/comfortaa-regular-webfont.eot');
@@ -58,8 +79,6 @@
     font-style: normal;
 
 }
-
-
 
 @font-face {
     font-family: 'robotolight';

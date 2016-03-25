@@ -2,12 +2,6 @@ extends ../main
 
 block content
     main.main
-        .welcome
-            .welcome__container
-                .welcome__quoteBox
-                    .welcome__quote Самое важное в занятиях йогой - не техника дыхания, знание асан или гибкость суставов. Самое важное – это расстелить коврик и начать заниматься
-                    .welcome__author Б.К.С. Айенгар
-                    a(href="#schedule").welcome__button Начать
         article#index.article
             .article__info
                 .article__container
@@ -16,7 +10,7 @@ block content
                         Здравствуйте, мои дорогие йожики! Благодарю Вас за интерес к моей страничке. Меня зовут Юлия, я буду Вашим проводником в удивительный мир ЙОГИ. На данном сайте Вы найдёте информацию о моих занятиях, о йоге, а также о всевозможных акциях и скидках.
             .article__asana
                 include ../asanas
-                +asana([0,1,0], asanas)
+                +asana([0,1,2], asanas)
 
             svg.initsvg
                 defs
@@ -38,9 +32,9 @@ block content
                             a(href='img/photos/diplom_big2.jpg', itemprop='contentUrl', data-size='1024x724').gallery__link
                                 img(src='img/photos/diplom_big2.jpg', itemprop='thumbnail', alt='Image description').gallery__img
                             figcaption(itemprop='caption description').gallery__caption Мой Диплом
-                        figure(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject').gallery__box
+                        figure(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject').gallery__box.ieCrutch
                             a(href='img/photos/cert-big.jpg', itemprop='contentUrl', data-size='909x1280').gallery__link
-                                img(src='img/photos/cert-big.jpg', itemprop='thumbnail', alt='Image description').gallery__img
+                                img(src='img/photos/cert-big.jpg', itemprop='thumbnail', width='250', alt='Image description').gallery__img
                             figcaption(itemprop='caption description').gallery__caption Сертификат Ишвара
                         figure(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject').gallery__box
                             a(href='img/photos/diplom_big1.jpg', itemprop='contentUrl', data-size='1024x734').gallery__link
@@ -75,7 +69,7 @@ block content
             svg(viewBox="0 0 100 100" preserveAspectRatio="none").article__curveDown
                 use(xlink:href="#curveDown")
             .article__asana
-                +asana([0,1,0], asanas)
+                +asana([3,4,5], asanas)
 
         article#about-yoga.article
             svg(viewBox="0 0 100 100" preserveAspectRatio="none").article__curveUp
@@ -99,7 +93,7 @@ block content
             svg(viewBox="0 0 100 100" preserveAspectRatio="none").article__curveDown
                 use(xlink:href="#curveDown")
             .article__asana
-                +asana([0,1,0], asanas)
+                +asana([6,7,8], asanas)
 
         article#schedule.article
             svg(viewBox="0 0 100 100" preserveAspectRatio="none").article__curveUp
@@ -124,8 +118,7 @@ block content
                                 li.place__time Вторник - 19:00
                                 li.place__time Четверг - 19:00
                     #mapBlock.place__block
-                    p.article__text
-                        | Уважаемые ученики и гости сайта, огромнейшая просьба, если у Вас есть информация о сдающихся в аренду залах (желательно с почасовой оплатой) или помещениях которые подойдут для занятий йогой, я буду очень благодарна, если Вы сообщите эту информацию мне.
+
                 .article__container
                     h2.article__header   Стоимость занятий
                     .price
@@ -139,7 +132,7 @@ block content
             svg(viewBox="0 0 100 100" preserveAspectRatio="none").article__curveDown
                 use(xlink:href="#curveDown")
             .article__asana
-                +asana([0,1,0], asanas)
+                +asana([9,10,11], asanas)
 
         article#video.article
             svg(viewBox="0 0 100 100" preserveAspectRatio="none").article__curveUp
@@ -181,7 +174,7 @@ block content
             svg(viewBox="0 0 100 100" preserveAspectRatio="none").article__curveDown
                 use(xlink:href="#curveDown")
             .article__asana
-                +asana([0,1,0], asanas)
+                +asana([12,0,1], asanas)
 
         article#seminars.article
             svg(viewBox="0 0 100 100" preserveAspectRatio="none").article__curveUp
@@ -261,8 +254,8 @@ block content
                     p.article__text ДО ВСТРЕЧИ НА КОВРИКАХ!
             svg(viewBox="0 0 100 100" preserveAspectRatio="none").article__curveDown
                 use(xlink:href="#curveDown")
-        .article__asana
-            +asana([0,1,0], asanas)
+            .article__asana
+                +asana([2,3,4], asanas)
 
 
 

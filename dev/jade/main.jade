@@ -11,14 +11,38 @@ html(lang='ru-RU')
 			| Тестовая версия нового сайта Йога в Кемерово - сайт мастера хатха-йоги Юлии Шалимовой
 		link(rel="stylesheet" href="css/main.min.css")
 		script(src="http://maps.api.2gis.ru/2.0/loader.js?lazy=true?pkg=basic&skin=light")
-		//- if lt IE 9
-		//- script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
-		//- p.browsehappy
-		//- 	| Некоторые элементы могут отображаться некорректно т.к. вы используете
-		//- 	strong устаревший
-		//- 	|  браузер. Пожалуйста
-		//- 	a(href='http://browsehappy.com/?locale=ru_RU') обновите
-		//- 	|  его.
+
+		link(rel="apple-touch-icon", sizes="57x57", href="/img/favicon/apple-touch-icon-57x57.png?v=LbbOQEP47J")
+		link(rel="apple-touch-icon", sizes="60x60", href="/img/favicon/apple-touch-icon-60x60.png?v=LbbOQEP47J")
+		link(rel="apple-touch-icon", sizes="72x72", href="/img/favicon/apple-touch-icon-72x72.png?v=LbbOQEP47J")
+		link(rel="apple-touch-icon", sizes="76x76", href="/img/favicon/apple-touch-icon-76x76.png?v=LbbOQEP47J")
+		link(rel="apple-touch-icon", sizes="114x114", href="/img/favicon/apple-touch-icon-114x114.png?v=LbbOQEP47J")
+		link(rel="apple-touch-icon", sizes="120x120", href="/img/favicon/apple-touch-icon-120x120.png?v=LbbOQEP47J")
+		link(rel="apple-touch-icon", sizes="144x144", href="/img/favicon/apple-touch-icon-144x144.png?v=LbbOQEP47J")
+		link(rel="apple-touch-icon", sizes="152x152", href="/img/favicon/apple-touch-icon-152x152.png?v=LbbOQEP47J")
+		link(rel="apple-touch-icon", sizes="180x180", href="/img/favicon/apple-touch-icon-180x180.png?v=LbbOQEP47J")
+		link(rel="icon", type="image/png", href="/img/favicon/favicon-32x32.png?v=LbbOQEP47J", sizes="32x32")
+		link(rel="icon", type="image/png", href="/img/favicon/favicon-194x194.png?v=LbbOQEP47J", sizes="194x194")
+		link(rel="icon", type="image/png", href="/img/favicon/favicon-96x96.png?v=LbbOQEP47J", sizes="96x96")
+		link(rel="icon", type="image/png", href="/img/favicon/android-chrome-192x192.png?v=LbbOQEP47J", sizes="192x192")
+		link(rel="icon", type="image/png", href="/img/favicon/favicon-16x16.png?v=LbbOQEP47J", sizes="16x16")
+		link(rel="manifest", href="/img/favicon/manifest.json?v=LbbOQEP47J")
+		link(rel="mask-icon", href="/img/favicon/safari-pinned-tab.svg?v=LbbOQEP47J", color="#5bbad5")
+		link(rel="shortcut icon", href="/img/favicon/favicon.ico?v=LbbOQEP47J")
+		meta(name="msapplication-TileColor", content="#da532c")
+		meta(name="msapplication-TileImage", content="/img/favicon/mstile-144x144.png?v=LbbOQEP47J")
+		meta(name="msapplication-config", content="/img/favicon/browserconfig.xml?v=LbbOQEP47J")
+		meta(name="theme-color", content="#ffffff")
+		<!--[if lt IE 10]>
+		script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
+		p.browsehappy
+			| Некоторые элементы могут отображаться некорректно т.к. вы используете
+			strong  устаревший
+			|  браузер. Пожалуйста
+			a(href='http://browsehappy.com/?locale=ru_RU')  обновите
+			|  его.
+		<![endif]-->
+
 	body
 		include _common/_header.jade
 		block content

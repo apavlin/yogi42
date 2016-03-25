@@ -1,10 +1,10 @@
 @media only screen and (max-width:1690px) {
 
   .asana__header {
-    font-size: 16px;
+    /*font-size: 16px;*/
   }
   .asana__text {
-    font-size: 13px;
+    font-size: 0.7rem;
   }
   .welcome {
     min-height: 500px;
@@ -13,23 +13,25 @@
 
 @media only screen and (max-width:1252px) {
   .menu__link {
-    font-size: 18px;
+    /*font-size: 18px;*/
   }
-  .article__container, .header__container, .welcome__container {
+  .article__container, .article__asana, .welcome__container {
       width: 85%;
   }
-  .asana__img {
-    transform: scale(0.8);
-  }
-  .asana__header {
-    font-size: 11px;
-    padding: 5px;
-    margin: 0;
-  }
-  .asana__text {
-    font-size: 9px;
-    padding: 10px;
-    margin: 0;
+  .asana {
+    &__img {
+      transform: scale(0.8);
+    }
+    &__header {
+      /*font-size: 11px;*/
+      padding: 5px;
+      margin: 0;
+    }
+    &__text {
+      /*font-size: 9px;*/
+      padding: 10px;
+      margin: 0;
+    }
   }
   .contacts__item {
     margin: 5px 40px;
@@ -39,9 +41,8 @@
   }
 }
 
-@media only screen and (max-width:850px) {
-  .header-container {
-    width: 95%;
+@media only screen and (max-width:940px) {
+  .header {
     flex-direction: column;
     align-items: center;
   }
@@ -49,17 +50,19 @@
     display: none;
   }
   .title {
-    display: none;
-    &__link {
-      font-size: 20px;
-    }
+    /*padding: 5px 30px;*/
+    border-bottom: 1px solid lightgray;
+    /*display: none;*/
   }
 
   .article{
     &__header {
-      font-size: 22px;
+      /*font-size: 22px;*/
     }
     &__container {
+      width: 90%;
+    }
+    &__asana {
       width: 90%;
     }
   }
@@ -68,13 +71,10 @@
     margin-right: 5px;
   }
   .menu__item {
-    padding: 5px 10px;
+    padding: 10px 6px;
   }
   .contacts__item {
     margin: 5px 30px;
-  }
-  .menu__link {
-    font-size: 18px;
   }
   .asana:last-child {
     display: none;
@@ -86,7 +86,6 @@
       }
       &__quoteBox {
         width: 50%;
-        font-size: 12px;
       }
   }
   .place {
@@ -100,27 +99,36 @@
 
 @media only screen and (max-width:670px) {
 
-  .title__link {
-    font-size: 20px;
-  }
-  .menu__item {
-    padding: 1px 2px;
-    &:after {
-      display: none;
+  #index {
+    .article {
+      &__header {
+        margin: 0 -20px 20px;
+        border-bottom: 1px solid lightgray;
+      }
     }
   }
-  .menu__link {
-    font-size: 16px;
+
+  .menu {
+    padding: 10px 0;
+    border-bottom: none;
+      &__item {
+        display: flex;
+        justify-content: center;
+        padding: 4px;
+      }
   }
   .article{
     &__header {
-      font-size: 22px;
+      /*font-size: 22px;*/
     }
     &__container {
       width: 95%;
     }
+    &__asana {
+      width: 95%;
+    }
     &__info {
-      font-size: 16px;
+      /*font-size: 16px;*/
       margin: 0;
     }
     &__curveUp, &__curveDown {
@@ -140,15 +148,26 @@
   .contacts__item {
     margin: 0 15px 3px;
   }
-  .asana:first-child {
-    display: none;
+  .asana {
+    &__wrapper {
+      padding: 10px;
+    }
+
+    &:first-child {
+      display: none;
+    }
   }
   .welcome {
     min-height: 200px;
     &__quoteBox {
       margin: 10px;
-        font-size: 10px;
+      font-size: 10px;
     }
+  }
+  .place__block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
   }
   .video {
     margin: 10px 4px;
