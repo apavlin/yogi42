@@ -66,19 +66,19 @@
 
 //Переходы по ссылкам
 
-    $("a").click(function () {
+    $("a.place__link").click(function () {
       var elementClick = $(this).attr("href");
       var destination = $(elementClick).offset().top;
       $('html,body').animate( { scrollTop: destination }, 1000 );
       return false;
     });
 
-    // $("a").click(function () {
-    //       var elementClick = $(this).attr("href");
-    //       var destination = $(elementClick).offset().top;
-    //       $('html,body').scrollTop(destination);
-    //       return false;
-    // });
+    $("a").click(function () {
+          var elementClick = $(this).attr("href");
+          var destination = $(elementClick).offset().top;
+          $('html,body').scrollTop(destination);
+          return false;
+    });
 
 
 // Появление блоков с текстом и заголовком при наведении на общий блок с асаной (если только средствами CSS на тач устройствах не появлялось при нажатии)

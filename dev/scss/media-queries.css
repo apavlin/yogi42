@@ -34,7 +34,7 @@
     }
   }
   .contacts__item {
-    margin: 5px 40px;
+    margin: 5px 7px;
   }
    .welcome {
     min-height: 400px;
@@ -73,8 +73,13 @@
   .menu__item {
     padding: 10px 6px;
   }
-  .contacts__item {
-    margin: 5px 30px;
+  .contacts {
+    width: 80%;
+     flex-wrap: wrap;
+     &__item {
+      /*justify-content: space-around;*/
+        flex-basis: 33%;
+      }
   }
   .asana:last-child {
     display: none;
@@ -96,6 +101,10 @@
       }
   }
 }
+
+
+
+
 
 @media only screen and (max-width:670px) {
 
@@ -139,14 +148,15 @@
     }
   }
 
-  .footer {
-    padding: 1px 0;
-  }
-  .links__text {
-    display: none;
-  }
-  .contacts__item {
-    margin: 0 15px 3px;
+
+  .contacts {
+    display: block;
+    width: auto;
+    /*flex-direction: column;*/
+      &__item {
+        margin: 10px 0;
+      flex-basis: auto;
+      }
   }
   .asana {
     &__wrapper {
