@@ -32,7 +32,7 @@
       margin-bottom: 20px;
     }
     &__text {
-      display: flex;
+      // display: flex;
       margin: 0 0 20px;
     }
     &__curveUp, &__curveDown {
@@ -298,7 +298,14 @@ $seminarsColor: lighten(#C1B512, 45%);
   margin-bottom: 25px;
    &__img {
     border-radius: 5px;
-
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__link {
+margin: 10px;
   }
 }
 
@@ -322,6 +329,7 @@ $seminarsColor: lighten(#C1B512, 45%);
 
     // max-height: 500px;
     border-radius: 4px;
+
   }
   &__link {
     width: 100%;
@@ -337,8 +345,9 @@ $seminarsColor: lighten(#C1B512, 45%);
     justify-content: center;
     align-items: center;
     margin: 0 5px 5px 0;
-    width: 280px;
-    max-height:390px;
+    // width: 280px;
+    // max-height:390px;
+
   }
   &__caption {
     font-size: 0.8rem;
@@ -349,5 +358,17 @@ $seminarsColor: lighten(#C1B512, 45%);
 
 .ieCrutch {
     width: 180px;
+
+}
+
+.aboutyoga {
+  // display: block;
+  // float: right!important;
+  margin: 0 auto 10px;
+  // height: 200px;
+  width: 70%;
+    border-radius: 4px;
+
+
 
 }

@@ -59,7 +59,7 @@ gulp.task('sass-compile', function() {
     .pipe(plumber({errorHandler: notify.onError("Sass: <%= error.message %>")}))
 		.pipe(sourcemaps.init())
 		.pipe(sass.sync().on('error', sass.logError))
-		.pipe(sass({outputStyle: 'expanded'}))
+		.pipe(sass({outputStyle: 'compressed'}))
 		.pipe(autoprefixer(['> 5%', 'last 5 versions', 'IE 9']))
 		.pipe(concat("main.min.css"))
 		.pipe(sourcemaps.write())

@@ -2,7 +2,10 @@
 //= ../../node_modules/photoswipe/dist/photoswipe.min.js
 //= ../../node_modules/photoswipe/dist/photoswipe-ui-default.min.js
 
-(function() {
+
+
+$(document).ready(function() {
+
 
 // Появление карты при нажатии на кнопку.
     var mapPlace1 = $('#mapPlace1');
@@ -306,4 +309,4 @@
     // execute above function
     initPhotoSwipeFromDOM('.gallery');
 
-})();
+});
