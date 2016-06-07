@@ -31,6 +31,9 @@
       padding: 20px;
       margin-bottom: 20px;
     }
+    &__subheader {
+      margin: 35px 0 ;
+    }
     &__text {
       // display: flex;
       margin: 0 0 20px;
@@ -54,7 +57,21 @@
     &__video {
       display: flex;
     }
+    &__list {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    &__link {
+      color: rgb(219, 157, 0);
+      text-decoration: underline;
+      margin-left: 2px;
+    }
+    &__item {
+      padding-left: 10px;
+      list-style-type: circle;
+    }
 }
+
 
 /*ASANAS*/
 
@@ -307,6 +324,14 @@ $seminarsColor: lighten(#C1B512, 45%);
   &__link {
 margin: 10px;
   }
+  &__shop {
+  transition: all 0.2s ease-in-out;
+
+    &:hover {
+    // box-shadow: 0 0 5px 3px rgba(0, 0, 0, .2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  }
 }
 
 #map1, #map2 {
@@ -368,7 +393,4 @@ margin: 10px;
   // height: 200px;
   width: 70%;
     border-radius: 4px;
-
-
-
 }

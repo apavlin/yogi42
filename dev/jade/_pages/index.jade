@@ -45,7 +45,7 @@ block content
                         | Проходила обучение у таких мастеров как Анатолий Зенченко, Владимир Калабин, Лилия Ивановна Музыченко, Вячеслав и Анна Овсянниковы, Ольга Голикова, Паршков Михаил, Игорь Пантюшев, Сергей Агапкин, Михаил Николаевич Константинов, Петри Ряйсянен и др. После обучения в Крыму, летом 2009 года, прошла сертификацию и получила диплом мастера Хатха-Йоги в «Крымском институте физкультуры на основе практической йоги».
                     .gallery(itemscope='', itemtype='http://schema.org/ImageGallery')
                         figure(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject').gallery__box.ieCrutch
-                            a(href='img/photos/diplom_big2.jpg', itemprop='contentUrl', data-size='1024x724').gallery__link
+                            a(href='img/photos/diplom_big2.jpg', itemprop='contentUrl', data-size='987x674').gallery__link
                                 img(src='img/photos/diplom_big2.jpg', itemprop='thumbnail', alt='Image description').gallery__img
                             figcaption(itemprop='caption description').gallery__caption Мой Диплом
                         figure(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject').gallery__box.ieCrutch
@@ -152,9 +152,9 @@ block content
                         p.article__text Вы можете подобрать себе коврик, чехол для него, удобную одежду для занятий йогой, аюрведические продукты и косметику, чаванпраш и многое другое. На сайтах часто делают скидки на множество товаров. Мы выполняем заказ раз в 2 месяца и доставка для вас будет бесплатной.
                         .price__box
                             a.price__link(href="http://yogin.ru", target='_blank')
-                                img.price__img(src="img/yogin_210x60.jpg", alt="yogin.ru")
+                                img.price__img(src="img/yogin_210x60.jpg", alt="yogin.ru").price__shop
                             a.price__link(href="http://hanuman.ru", target='_blank')
-                                img.price__img(src="img/hanuman300.gif", width='210', alt="hanuman.ru")
+                                img.price__img(src="img/hanuman300.gif", width='210', alt="hanuman.ru").price__shop
 
             svg(viewBox="0 0 100 100" preserveAspectRatio="none").article__curveDown
                 use(xlink:href="#curveDown")
@@ -172,32 +172,39 @@ block content
 
                     .article__video
                         .video
-                            h3.video__header Сурья намаскар - простой вариант
+                            h3.video__header Приветствие Солнцу
                             iframe(src="https://www.youtube.com/embed/VcvzhZYV-nU"  allowfullscreen).video__frame
                             p.video__text
-                                | Cлово Сурья означает «Солнце». Солнце поддерживает своей энергией все живое на земле. Практика Сурья намаскар (приветствие Солнцу) предназначена для того, чтобы вы пропитались этой энергией. Сурья намаскар - очень известная техника в йоге, один из наиболее употребляемых методов для поддержания здоровья и энергичной активной жизни. И в то же время, она является подготовкой к духовному пробуждению и, как результат - к расширению сознания.
+                                | Сурья намаскар. Cлово Сурья означает «Солнце». Солнце поддерживает своей энергией все живое на земле. Практика Сурья намаскар (приветствие Солнцу) предназначена для того, чтобы вы пропитались этой энергией. Сурья намаскар - очень известная техника в йоге, один из наиболее употребляемых методов для поддержания здоровья и энергичной активной жизни. И в то же время, она является подготовкой к духовному пробуждению и, как результат - к расширению сознания.
+                            p.video__text
                         .video
-                            h3.video__header Боковая Планка
+                            h3.video__header Приветствие Луне
                             iframe(src="https://www.youtube.com/embed/gjhn1JMyXkc"  allowfullscreen).video__frame
                             p.video__text
-                                | Баланс в позе боковой планки. Эта поза укрепляет мышцы запястий, рук, плеч и живота. Для выполнения асаны потребуется максимум усилий. Сосредоточьтесь на сохранении равновесия.
+                                | Видео появится в ближайшее время.
+                                //- | - Чандра Намаскар. Эта поза прекрасно укрепляет и тонизирует органы брюшной полости, а также задействует мышцы низа спины. Поначалу она кажется сложной, но регулярная практика непременно увенчается успехом.
+                            p.video__text
                         .video
-                            h3.video__header Поза Лодки - Навасана
+                            h3.video__header Поза Лодки
                             iframe(src="https://www.youtube.com/embed/aMN6MzHxSpU"  allowfullscreen).video__frame
                             p.video__text
-                                | Эта поза прекрасно укрепляет и тонизирует органы брюшной полости, а также задействует мышцы низа спины. Поначалу она кажется сложной, но регулярная практика непременно увенчается успехом.
+                                | Видео появится в ближайшее время.
+
+                                //- | Парипурна Навасана. Эта поза прекрасно укрепляет и тонизирует органы брюшной полости, а также задействует мышцы низа спины. Поначалу она кажется сложной, но регулярная практика непременно увенчается успехом.
+                            p.video__text
                         .video
-                            h3.video__header Поза Верблюда - Уштрасана
+                            h3.video__header Продольный Шпагат
                             iframe(src="https://www.youtube.com/embed/5Z9dnEczJXI"  allowfullscreen).video__frame
                             p.video__text
-                                | Эта важная поза готовит тело и ум к более сложным прогибам. Она развивает подвижность в плечах и низу спины, а также раскрывает грудную клетку. Уштрасана - вытягивает и тонизирует весь позвоночник. Она исправляет сутулые плечи и спинной горб.подвижность в плечах и низу спины, а также раскрывает грудную клетку. Уштрасана - вытягивает и тонизирует весь позвоночник. Она исправляет сутулые плечи и спинной горб.
+                                | Видео появится в ближайшее время.
+                            //- p.video__text Хануманасана
 
                         .video
-                            h3.video__header Мое выступление на марафоне
+                            h3.video__header Поперечный Шпагат
                             iframe(src="https://www.youtube.com/embed/2KVyZwrM4Fw"  allowfullscreen).video__frame
                             p.video__text
-                                | В этом видео вы можете ознакомиться с моим выступлением на.....
-
+                                | Видео появится в ближайшее время.
+                            //- p.video__text  Самоконаса
             svg(viewBox="0 0 100 100" preserveAspectRatio="none").article__curveDown
                 use(xlink:href="#curveDown")
             .article__asana
@@ -208,18 +215,92 @@ block content
                 use(xlink:href="#curveUp")
             .article__info
                 .article__container
-                    h2.article__header   Семинары
-                    h3.article__text Анонс серии семинаров Игоря Пантюшева “ЙОГА. КУЛЬТУРА ДВИЖЕНИЯ”
-                    p.article__text
-                        | Третий семинар с Игорем Пантюшевым состоится 7-8 мая. Оба дня с 12 до 18 часов с перерывом на обед. Семинар будет проводиться по адресу Ленина 32А, студия "Танец+", поэтому прошу вас регистрироваться заранее т.к количество мест ограничено.
-                    p.article__text
-                        | Предварительная запись ОБЯЗАТЕЛЬНА по телефону 8&#8209;906&#8209;933&#8209;3964.
-                    p.article__text
-                        | СТОИМОСТЬ: два дня по предоплате до 25 апреля - 2500р, после 25го - 3000р. Один день - 1500р.
+                    h2.article__header Мероприятия
+                    h3.article__subheader Йога-тур в Хакасию.
                     .gallery(itemscope='', itemtype='http://schema.org/ImageGallery')
                         figure(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject').gallery__box
-                            a(href='img/photos/seminar3.jpg', itemprop='contentUrl', data-size='1500x2122').gallery__link
-                                img(src='img/photos/thumbnails/seminar3.jpg', itemprop='thumbnail', alt='Описание семинара').gallery__img
+                            a(href='img/photos/yogatour1.jpg', itemprop='contentUrl', data-size='1280x772').gallery__link
+                                img(src='img/photos/thumbnails/yogatour1.jpg', itemprop='thumbnail', alt='Описание семинара').gallery__img
+                        figure(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject').gallery__box
+                            a(href='img/photos/yogatour2.jpg', itemprop='contentUrl', data-size='1280x772').gallery__link
+                                img(src='img/photos/thumbnails/yogatour2.jpg', itemprop='thumbnail', alt='Описание семинара').gallery__img
+                        figure(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject').gallery__box
+                            a(href='img/photos/yogatour3.jpg', itemprop='contentUrl', data-size='1280x772').gallery__link
+                                img(src='img/photos/thumbnails/yogatour3.jpg', itemprop='thumbnail', alt='Описание семинара').gallery__img
+                    p.article__text
+                        |  Друзья, с 5-10 июля мы едем в Йога-тур в Хакасию. База находится в чистейшей сибирской тайге на берегу горной реки Стоктыш на высоте 1500м над уровнем моря. Обратите внимание, очень-очень демократичная цена - в стоимость ВСЕ ВКЛЮЧЕНО:
+                    ul.article__list
+                        li.article__item при 2х-местном размещении 14000р.
+                        li.article__item при 3х-местном размещении 13000р.
+
+                    p.article__text В стоимость тура входит:
+                    ul.article__list
+                        li.article__item проживание в домиках
+                        li.article__item 3х-разовое питание ( вегетарианское и традиционное) на выбор
+                        li.article__item экскурсии
+                        li.article__item занятия йогой
+
+                    p.article__text Больше информации, изменения и обсуждения
+                        a.article__link(href="https://vk.com/yoga.hatha42",  target='_blank')  в группе.
+
+
+
+                    h3.article__subheader Летний семинар-интенсив с Игорем Пантюшевым в Крыму! 10-16 августа 2016
+                    .gallery(itemscope='', itemtype='http://schema.org/ImageGallery')
+                        figure(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject').gallery__box
+                            a(href='img/photos/crema2.jpg', itemprop='contentUrl', data-size='1280x853').gallery__link
+                                img(src='img/photos/thumbnails/crema2.jpg', itemprop='thumbnail', alt='Описание семинара').gallery__img
+                        figure(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject').gallery__box
+                            a(href='img/photos/crema1.jpg', itemprop='contentUrl', data-size='1527x1947').gallery__link
+                                img(src='img/photos/thumbnails/crema1.jpg', itemprop='thumbnail', alt='Описание семинара').gallery__img
+                        figure(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject').gallery__box
+                            a(href='img/photos/crema3.jpg', itemprop='contentUrl', data-size='1280x853').gallery__link
+                                img(src='img/photos/thumbnails/crema3.jpg', itemprop='thumbnail', alt='Описание семинара').gallery__img
+                    p.article__text
+                        |  Место проведения: международный образовательный центр «ECO CAMP», Крым, пос.Новоульяновка.
+                        a.article__link(href="https://www.healthspirit.ru",  target='_blank')  Официальный сайт
+
+                    h4.article__text Стоимость тура (проживание+занятия):
+                    p.article__text С проживание на территории базы в собственной палатке:
+                    ul.article__list
+                        li.article__item При оплате до 1 марта – 13 700 рублей
+                        li.article__item При оплате до 1 августа  – 15 700 рублей
+                        li.article__item Оплата после 1 августа – 17 700 рублей
+
+                    p.article__text С проживанием в двухместном бунгало при двухместном размещении (душ и туалет на территории базы):
+
+                    ul.article__list
+                        li.article__item При оплате до 1 марта – 18 000 рублей
+                        li.article__item При оплате до 1 августа  – 20 000 рублей
+                        li.article__item Оплата после 1 августа – 22 000 рублей
+
+                    p.article__text Возможно проживание в благоустроенных коттеджах. Бронирование по запросу.
+
+
+                    p.article__text Скидки для детей:
+
+                    ul.article__list
+                        li.article__item Дети до 3 лет – бесплатно вместе с родителями без предоставления отдельного постельного места.
+                        li.article__item Детям от 3 лет до 12 лет – предоставляет скидка в размере 50%.
+                        li.article__item Дети после 12 лет – осуществляют оплату в полном размере.
+
+                    p.article__text Больше информации, изменения и обсуждения
+                        a.article__link(href="http://vk.com/krymspantyushevym",  target='_blank')  в группе.
+
+
+
+
+
+                    //- h3.article__subheader Анонс серии семинаров Игоря Пантюшева “ЙОГА. КУЛЬТУРА ДВИЖЕНИЯ”
+
+                    //- p.article__text
+                    //-     | Предварительная запись ОБЯЗАТЕЛЬНА по телефону 8&#8209;906&#8209;933&#8209;3964.
+                    //- p.article__text
+                    //-     | СТОИМОСТЬ: два дня по предоплате до 25 апреля - 2500р, после 25го - 3000р. Один день - 1500р.
+                    //- .gallery(itemscope='', itemtype='http://schema.org/ImageGallery')
+                    //-     figure(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject').gallery__box
+                    //-         a(href='img/photos/seminar3.jpg', itemprop='contentUrl', data-size='1500x2122').gallery__link
+                    //-             img(src='img/photos/thumbnails/seminar3.jpg', itemprop='thumbnail', alt='Описание семинара').gallery__img
             svg(viewBox="0 0 100 100" preserveAspectRatio="none").article__curveDown
                 use(xlink:href="#curveDown")
             .article__asana
